@@ -43,7 +43,7 @@ const Cart = () => {
             <div className="flex flex-col gap-5">
             <div className="flex justify-between items-center ">
               <span className="">order total </span>
-              <span className="text-lg font-semibold">${totalPrice} </span>
+              <span className="text-lg font-semibold">${totalPrice.toFixed(2)} </span>
             </div>
 
             <div className="flex md:justify-between gap-1 lg:justify-around  justify-around items-center rounded-lg w-[90%] md:w-full mx-auto bg-orange-50 p-4">
