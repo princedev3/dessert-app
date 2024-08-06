@@ -33,7 +33,7 @@ const Price = ({ item }) => {
       quantity:Number(quantity)
     })
   }
-  console.log(quantity)
+
   
 
  

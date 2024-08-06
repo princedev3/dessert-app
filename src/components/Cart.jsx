@@ -10,7 +10,7 @@ const Cart = () => {
     useBearStore.persist.rehydrate()
   },[])
 
-  console.log(product)
+
   return (
     <div>
         <div className=" p-4 bg-white rounded-md">
@@ -19,7 +19,7 @@ const Cart = () => {
             {
                 product.map(each=>(
 
-            <div className="flex justify-between items-center border-b pb-2">
+            <div key={each.id} className="flex justify-between items-center border-b pb-2">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-sm font-bold tracking-wide">{each.name} </h2>
                     <div className="text-orange-700 text-sm flex gap-2">
